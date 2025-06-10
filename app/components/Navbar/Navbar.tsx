@@ -4,7 +4,6 @@ import Link from 'next/link';
 import React from 'react';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Signdialog from "./Signdialog";
 import Registerdialog from "./Registerdialog";
 
 
@@ -16,10 +15,11 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
     { name: 'Home', href: '/', current: true },
-    { name: 'Services', href: '#services', current: false },
     { name: 'About', href: '#about', current: false },
-    { name: 'Project', href: '#project', current: false },
-    { name: 'Help', href: '/', current: false },
+    { name: 'portfolio', href: '/', current: false },
+    { name: 'Newsletter', href: '#services', current: false },
+    { name: 'InteractiveMap', href: '#project', current: false },
+    { name: 'Contact', href: '#contact', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -41,13 +41,13 @@ const Navbar = () => {
 
                             <div className="flex flex-shrink-0 items-center">
                                 <img
-                                    className="block h-12 w-40 lg:hidden"
-                                    src={'/assets/logo/logo.png'}
+                                    className="block h-12 w-40 object-contain lg:hidden"
+                                    src={'/imgs/bannerFW.png'}
                                     alt="dsign-logo"
                                 />
                                 <img
-                                    className="hidden h-full w-full lg:block"
-                                    src={'/assets/logo/logo.png'}
+                                    className="hidden lg:block h-20 w-48 object-contain"
+                                    src={'/imgs/bannerFW.png'}
                                     alt="dsign-logo"
                                 />
                             </div>
@@ -72,11 +72,6 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-
-                        {/* SIGNIN DIALOG */}
-
-                        <Signdialog />
-
 
                         {/* REGISTER DIALOG */}
 
