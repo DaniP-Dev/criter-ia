@@ -9,7 +9,7 @@ interface ProductType {
     link: string[];
 }
 
-const footer = () => {
+const Footer = () => {
     const t = useTranslations("Footer");
     const products: ProductType[] = [
         {
@@ -89,4 +89,4 @@ const footer = () => {
     )
 }
 
-export default footer;
+export default Footer;
