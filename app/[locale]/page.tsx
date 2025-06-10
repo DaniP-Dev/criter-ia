@@ -18,14 +18,10 @@ export default function HomePage() {
       <Companies />
       <Buyers />
       <Provide />
-      <div style={{ border: "2px solid red" }}>
-        <Why />
-      </div>
-      <Network /> {/* Map */}
-      <Clientsay />
-      <div style={{ border: "2px solid red" }}>
-        <Newsletter />
-      </div>
+      <Why />
+      {/* <Network /> Map */}
+      <section className="bg-white py-16" />
+      <Newsletter />
     </main>
   );
 }

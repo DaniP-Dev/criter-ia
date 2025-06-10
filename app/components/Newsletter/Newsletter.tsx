@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const Newsletter = () => {
+    const t = useTranslations("Newsletter");
     return (
         <div className='-mt-32 relative z-3'>
             <div className="mx-auto max-w-2xl lg:max-w-7xl bg-blue-500 rounded-3xl">
@@ -21,10 +23,15 @@ const Newsletter = () => {
 
                     {/* COLUMN-2 */}
                     <div className="p-10 flex flex-col justify-center">
-                        <h3 className="text-4xl md:text-5xl font-semibold mb-3 text-white">Sign up to our newsletter.</h3>
-                        <h4 className="text-base font-normal mb-7 text-offwhite">Craven omni memoria patriae zombieland clairvius narcisse religionis sunt diri undead historiarum.</h4>
+                        <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 text-white">
+                            {t("title")}
+                        </h3>
+                        <h4 className="text-base md:text-lg font-normal mb-7 text-offwhite max-w-xl">
+                            {t("subtitle")}
+                        </h4>
                         <div className="flex gap-0">
-                            <input type="Email address" name="q" className="py-4 text-sm w-full text-black bg-white rounded-l-lg pl-4" placeholder="@enter email-address" autoComplete="off" />
+                            <input type="Email address" name="q" className="py-4 text-sm w-full text-black bg-white rounded-l-lg pl-4" placeholder={t("placeholder")}
+                                autoComplete="off" />
                             <button className="bg-midblue text-white font-medium py-2 px-4 rounded-r-lg">
                                 <Image src={'/assets/newsletter/plane.svg'} alt="plane-img" width={20} height={20} />
                             </button>

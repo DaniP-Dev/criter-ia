@@ -72,5 +72,45 @@
       "title": "Strategic Relations and Media",
       "desc": "Political alliances, media management, and public image consulting."
     }
+  },
+  "Why": {
+    "title": "Digital Communication Newsletter in Colombia",
+    "subtitle": "Explore the cover and browse the digital newsletter like an interactive book. Use the arrows to flip pages, download the full PDF, or expand to fullscreen for a better reading experience.",
+    "items": [
+      {
+        "heading": "Quality",
+        "subheading": "We provide verified and up-to-date information on digital communication in Colombia."
+      },
+      {
+        "heading": "Communication",
+        "subheading": "We facilitate access to trends, analysis, and key resources in the digital sector."
+      },
+      {
+        "heading": "Reliability",
+        "subheading": "Our newsletter is a reliable source for professionals and enthusiasts in the field."
+      }
+    ],
+    "checkAlt": "Check icon"
+  },
+  "Footer": {
+    "address": "925 Filbert Street Pennsylvania 18072",
+    "phone": "+ 45 34 11 44 11",
+    "email": "info@gmail.com",
+    "copyright": "© 2025 Criteria Political Communication. All rights reserved.",
+    "privacy": "Privacy policy",
+    "terms": "Terms & conditions",
+    "home": "Home",
+    "popular": "Popular",
+    "about": "About",
+    "contact": "Contact",
+    "help": "Help",
+    "resources": "Resources",
+    "application": "Application",
+    "team": "Team"
+  },
+  "Newsletter": {
+    "title": "Subscribe to our digital newsletter",
+    "subtitle": "Receive the latest trends, analysis, and resources on digital and political communication in Colombia directly to your inbox. Stay informed with Criteria Political Communication.",
+    "placeholder": "Enter your email address"
   }
 }

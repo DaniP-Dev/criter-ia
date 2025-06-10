@@ -68,7 +68,7 @@ export default async function LocaleLayout({
     <NextIntlClientProvider locale={locale} messages={messages}>
       <Navbar />
       <main className="pt-28">
-        <div className="fixed right-0 top-20 md:top-28">
+        <div className="fixed right-0 top-20 md:top-28 z-50">
           <LanguageIcon />
         </div>
         {children}

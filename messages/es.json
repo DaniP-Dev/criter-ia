@@ -72,5 +72,45 @@
             "title": "Relacionamiento Estratégico y Medios",
             "desc": "Alianzas políticas, gestión de medios y asesoría en imagen pública."
         }
+    },
+    "Why": {
+        "title": "Boletín de Comunicación Digital en Colombia",
+        "subtitle": "Explora la portada y navega el boletín digital como un libro interactivo. Utiliza las flechas para avanzar o retroceder páginas, descarga el PDF completo o amplía a pantalla completa para una mejor experiencia de lectura.",
+        "items": [
+            {
+                "heading": "Calidad",
+                "subheading": "Ofrecemos información verificada y actualizada sobre la comunicación digital en Colombia."
+            },
+            {
+                "heading": "Comunicación",
+                "subheading": "Facilitamos el acceso a tendencias, análisis y recursos clave del sector digital."
+            },
+            {
+                "heading": "Confiabilidad",
+                "subheading": "Nuestro boletín es una fuente confiable para profesionales y entusiastas del área."
+            }
+        ],
+        "checkAlt": "Icono de verificación"
+    },
+    "Footer": {
+        "address": "925 Filbert Street Pennsylvania 18072",
+        "phone": "+ 45 34 11 44 11",
+        "email": "info@gmail.com",
+        "copyright": "© 2025 Criteria Comunicación Política. Todos los derechos reservados.",
+        "privacy": "Política de privacidad",
+        "terms": "Términos y condiciones",
+        "home": "Inicio",
+        "popular": "Popular",
+        "about": "Nosotros",
+        "contact": "Contacto",
+        "help": "Ayuda",
+        "resources": "Recursos",
+        "application": "Aplicación",
+        "team": "Equipo"
+    },
+    "Newsletter": {
+        "title": "Suscríbete a nuestro boletín digital",
+        "subtitle": "Recibe en tu correo las últimas tendencias, análisis y recursos sobre comunicación digital y política en Colombia. Mantente informado con Criteria Comunicación Política.",
+        "placeholder": "Ingresa tu correo electrónico"
     }
 }
