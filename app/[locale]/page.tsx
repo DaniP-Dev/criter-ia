@@ -22,7 +22,7 @@ export default function HomePage() {
         <Buyers />
       </div>
       <Provide />
-      <Network /> //Map
+      <Network /> {/* Map */}
       <Why />
       <Clientsay />
       <Newsletter />
