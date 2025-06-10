@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface NavigationItem {
   name: string;
@@ -7,20 +8,21 @@ interface NavigationItem {
   current: boolean;
 }
 
-const navigation: NavigationItem[] = [
-  { name: "Home", href: "/", current: true },
-  { name: "About", href: "#about", current: false },
-  { name: "portfolio", href: "/", current: false },
-  { name: "Newsletter", href: "#services", current: false },
-  { name: "InteractiveMap", href: "#project", current: false },
-  { name: "Contact", href: "#contact", current: false },
-];
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
 const Data = () => {
+  const t = useTranslations("Navbar");
+  const navigation: NavigationItem[] = [
+    { name: t("home"), href: "/", current: true },
+    { name: t("about"), href: "#about", current: false },
+    { name: t("portfolio"), href: "/", current: false },
+    { name: t("newsletter"), href: "#services", current: false },
+    { name: t("interactiveMap"), href: "#project", current: false },
+    { name: t("contact"), href: "#contact", current: false },
+  ];
+
+  function classNames(...classes: string[]) {
+    return classes.filter(Boolean).join(" ");
+  }
+
   return (
     <div className="rounded-md max-w-sm w-full mx-auto">
       <div className="flex-1 space-y-4 py-1">

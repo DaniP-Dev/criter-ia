@@ -37,5 +37,40 @@
     "subtitle": "We are Criteria Political Communication: we turn digital intelligence and territorial analysis into winning narratives for political leaders.",
     "ctaPortfolio": "Explore our services",
     "ctaMoreInfo": "Download the Digital Newsletter"
+  },
+  "Services": {
+    "title": "We provide that service.",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo",
+    "learnMore": "Learn more",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "service1": {
+      "title": "Social Listening",
+      "desc": "Monitoring trends, sentiment analysis, crisis management, and use of specialized tools."
+    },
+    "service2": {
+      "title": "Counter-campaign Strategy",
+      "desc": "Oriented social listening, emergency communication, and narrative studies."
+    },
+    "service3": {
+      "title": "Personal Branding",
+      "desc": "Profiling, demographic analysis, narrative context, and identity manual."
+    },
+    "service4": {
+      "title": "Political Platform",
+      "desc": "Advisory team formation, resonance groups, media plan, and volunteer school."
+    },
+    "service5": {
+      "title": "Digital Strategy and Social Media",
+      "desc": "Digital strategy design, audience segmentation, and narrative positioning."
+    },
+    "service6": {
+      "title": "Demographic and Territorial Studies",
+      "desc": "Electoral analysis, niche identification, and vote migration studies."
+    },
+    "service7": {
+      "title": "Strategic Relations and Media",
+      "desc": "Political alliances, media management, and public image consulting."
+    }
   }
 }

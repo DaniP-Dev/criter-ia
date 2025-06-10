@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import LanguageIcon from "../components/LanguageSwitcher";
 
 export const metadata = {
   title: "Criter-IA | Consultoría en comunicación política y análisis de datos",
@@ -66,7 +67,12 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <Navbar />
-      <main className="pt-28">{children}</main>
+      <main className="pt-28">
+        <div className="fixed right-0 top-20 md:top-28">
+          <LanguageIcon />
+        </div>
+        {children}
+      </main>
       <Footer />
     </NextIntlClientProvider>
   );

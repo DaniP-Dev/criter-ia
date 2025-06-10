@@ -23,10 +23,10 @@
     },
     "Navbar": {
         "home": "Inicio",
-        "about": "Quiénes Somos",
-        "portfolio": "Portafolio",
-        "newsletter": "Newsletter",
-        "interactiveMap": "Mapa Interactivo",
+        "about": "Nosotros",
+        "portfolio": "Servicios",
+        "newsletter": "Boletín",
+        "interactiveMap": "Mapa",
         "contact": "Contacto"
     },
     "ButtonCTA": {
@@ -37,5 +37,40 @@
         "subtitle": "Somos Criteria Comunicación Política: convertimos inteligencia digital y análisis territorial en narrativas ganadoras para líderes políticos.",
         "ctaPortfolio": "Conoce nuestros servicios",
         "ctaMoreInfo": "Descarga el Boletín Digital"
+    },
+    "Services": {
+        "title": "Ofrecemos estos servicios.",
+        "description": "Descubre cómo nuestros servicios de consultoría en comunicación política pueden ayudarte a potenciar tu liderazgo, mejorar tu posicionamiento y alcanzar tus objetivos estratégicos con soluciones personalizadas y tecnología de vanguardia.",
+        "learnMore": "Conoce más",
+        "showMore": "Ver más",
+        "showLess": "Ver menos",
+        "service1": {
+            "title": "Social Listening",
+            "desc": "Monitoreo de tendencias, análisis de sentimiento, gestión de crisis y uso de herramientas especializadas."
+        },
+        "service2": {
+            "title": "Estrategia de Contra campaña",
+            "desc": "Social listening orientado, comunicación de emergencia y estudios narrativos."
+        },
+        "service3": {
+            "title": "Personal Branding",
+            "desc": "Perfilamiento, análisis demográfico, contexto narrativo y manual de identidad."
+        },
+        "service4": {
+            "title": "Plataforma Política",
+            "desc": "Formación de equipo asesor, grupos de resonancia, plan de medios y escuela de voluntarios."
+        },
+        "service5": {
+            "title": "Estrategia Digital y Redes Sociales",
+            "desc": "Diseño de estrategia digital, segmentación de audiencias y posicionamiento de narrativa."
+        },
+        "service6": {
+            "title": "Estudios Demográficos y Territoriales",
+            "desc": "Análisis electoral, identificación de nichos y estudios de migración de voto."
+        },
+        "service7": {
+            "title": "Relacionamiento Estratégico y Medios",
+            "desc": "Alianzas políticas, gestión de medios y asesoría en imagen pública."
+        }
     }
 }

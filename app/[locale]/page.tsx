@@ -15,17 +15,17 @@ export default function HomePage() {
   return (
     <main>
       <Banner />
-      <div style={{ border: "2px solid red" }}>
-        <Companies />
-      </div>
-      <div style={{ border: "2px solid blue" }}>
-        <Buyers />
-      </div>
+      <Companies />
+      <Buyers />
       <Provide />
+      <div style={{ border: "2px solid red" }}>
+        <Why />
+      </div>
       <Network /> {/* Map */}
-      <Why />
       <Clientsay />
-      <Newsletter />
+      <div style={{ border: "2px solid red" }}>
+        <Newsletter />
+      </div>
     </main>
   );
 }
