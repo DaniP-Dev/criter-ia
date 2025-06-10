@@ -1,10 +1,11 @@
+"use client";
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import React from 'react';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Registerdialog from "./Registerdialog";
+import CtaButton from "./CtaButton";
 
 
 interface NavigationItem {
@@ -73,9 +74,9 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* REGISTER DIALOG */}
+                        {/* CTA */}
 
-                        <Registerdialog />
+                        <CtaButton/>
 
 
                         {/* DRAWER FOR MOBILE VIEW */}

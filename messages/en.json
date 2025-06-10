@@ -2,5 +2,40 @@
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"
+  },
+  "About": {
+    "mission": {
+      "heading": "Who We Are",
+      "description": "We are a political communication consulting firm that transforms data into narrative power. We help create, position, and strengthen political leaders using digital intelligence, territorial analysis, and influence strategies."
+    },
+    "vision": {
+      "heading": "Our Approach",
+      "description": "We design personalized strategies that combine data analysis, social listening, and territorial insight to confidently shape public debate."
+    },
+    "values": {
+      "heading": "Our Technology",
+      "description": "We offer a robust ecosystem of proprietary and partner tools to turn social data into actionable narratives. From specialized scrapers to AI models trained to identify trends, sentiment, and electoral behavior, our technology empowers precise, timely, and segmented decisions."
+    },
+    "team": {
+      "heading": "Smart Decision-Making",
+      "description": "Our diverse team of professionals is dedicated to delivering innovative solutions that maximize your political impact and ensure success in every campaign."
+    }
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "newsletter": "Newsletter",
+    "interactiveMap": "Interactive Map",
+    "contact": "Contact"
+  },
+  "ButtonCTA": {
+    "ctaText": "Cta En"
+  },
+  "Banner": {
+    "title": "Transform data into political communication strategies",
+    "subtitle": "We are Criteria Political Communication: we turn digital intelligence and territorial analysis into winning narratives for political leaders.",
+    "ctaPortfolio": "Explore our services",
+    "ctaMoreInfo": "Download the Digital Newsletter"
   }
 }

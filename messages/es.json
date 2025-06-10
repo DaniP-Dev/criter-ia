@@ -2,5 +2,40 @@
     "HomePage": {
         "title": "¡Hola, mundo!",
         "about": "Ir a la página de información"
+    },
+    "About": {
+        "mission": {
+            "heading": "¿Quiénes Somos?",
+            "description": "Somos una firma de consultoría en comunicación política que transforma datos en poder narrativo. Acompañamos la creación, posicionamiento y consolidación de líderes políticos con herramientas de inteligencia digital, análisis territorial y estrategia de influencia."
+        },
+        "vision": {
+            "heading": "Nuestro Enfoque",
+            "description": "Diseñamos estrategias personalizadas que combinan análisis de datos, escucha social y visión territorial para incidir con confianza en el debate público."
+        },
+        "values": {
+            "heading": "Nuestra Tecnología",
+            "description": "Contamos con un ecosistema de herramientas propias y aliadas para transformar datos sociales en insumos narrativos. Desde scrapers especializados hasta modelos de IA entrenados para identificar tendencias, sentimientos y comportamientos electorales."
+        },
+        "team": {
+            "heading": "Decisiones Inteligentes",
+            "description": "Nuestra tecnología permite tomar decisiones precisas, oportunas y segmentadas, potenciando el impacto de cada acción en el ámbito político."
+        }
+    },
+    "Navbar": {
+        "home": "Inicio",
+        "about": "Quiénes Somos",
+        "portfolio": "Portafolio",
+        "newsletter": "Newsletter",
+        "interactiveMap": "Mapa Interactivo",
+        "contact": "Contacto"
+    },
+    "ButtonCTA": {
+        "ctaText": "Cta Es"
+    },
+    "Banner": {
+        "title": "Transforma datos en estrategias de comunicación política",
+        "subtitle": "Somos Criteria Comunicación Política: convertimos inteligencia digital y análisis territorial en narrativas ganadoras para líderes políticos.",
+        "ctaPortfolio": "Conoce nuestros servicios",
+        "ctaMoreInfo": "Descarga el Boletín Digital"
     }
 }
