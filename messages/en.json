@@ -35,8 +35,7 @@
   "Banner": {
     "title": "Transform data into political communication strategies",
     "subtitle": "We are Criteria Political Communication: we turn digital intelligence and territorial analysis into winning narratives for political leaders.",
-    "ctaPortfolio": "Explore our services",
-    "ctaMoreInfo": "Download the Digital Newsletter"
+    "ctaPortfolio": "Explore our services"
   },
   "Services": {
     "title": "We provide that service.",
@@ -76,6 +75,8 @@
   "Why": {
     "title": "Digital Communication Newsletter in Colombia",
     "subtitle": "Explore the cover and browse the digital newsletter like an interactive book. Use the arrows to flip pages, download the full PDF, or expand to fullscreen for a better reading experience.",
+    "ctaMoreInfo": "Download the Digital Newsletter",
+    "checkAlt": "Check icon",
     "items": [
       {
         "heading": "Quality",
@@ -89,8 +90,7 @@
         "heading": "Reliability",
         "subheading": "Our newsletter is a reliable source for professionals and enthusiasts in the field."
       }
-    ],
-    "checkAlt": "Check icon"
+    ]
   },
   "Footer": {
     "address": "925 Filbert Street Pennsylvania 18072",

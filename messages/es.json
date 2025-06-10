@@ -35,8 +35,7 @@
     "Banner": {
         "title": "Transforma datos en estrategias de comunicación política",
         "subtitle": "Somos Criteria Comunicación Política: convertimos inteligencia digital y análisis territorial en narrativas ganadoras para líderes políticos.",
-        "ctaPortfolio": "Conoce nuestros servicios",
-        "ctaMoreInfo": "Descarga el Boletín Digital"
+        "ctaPortfolio": "Conoce nuestros servicios"
     },
     "Services": {
         "title": "Ofrecemos estos servicios.",
@@ -76,6 +75,8 @@
     "Why": {
         "title": "Boletín de Comunicación Digital en Colombia",
         "subtitle": "Explora la portada y navega el boletín digital como un libro interactivo. Utiliza las flechas para avanzar o retroceder páginas, descarga el PDF completo o amplía a pantalla completa para una mejor experiencia de lectura.",
+        "checkAlt": "Icono de verificación",
+        "ctaMoreInfo": "Descarga el Boletín Digital",
         "items": [
             {
                 "heading": "Calidad",
@@ -89,8 +90,7 @@
                 "heading": "Confiabilidad",
                 "subheading": "Nuestro boletín es una fuente confiable para profesionales y entusiastas del área."
             }
-        ],
-        "checkAlt": "Icono de verificación"
+        ]
     },
     "Footer": {
         "address": "925 Filbert Street Pennsylvania 18072",

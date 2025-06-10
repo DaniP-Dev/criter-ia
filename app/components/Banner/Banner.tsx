@@ -23,12 +23,7 @@ const Banner = () => {
             >
               {t("ctaPortfolio")}
             </button>
-            <button
-              type="button"
-              className="text-15px ml-4 mt-2 text-blue transition duration-150 ease-in-out hover:text-white hover:bg-blue font-medium py-5 px-16 border border-lightgrey leafbutton"
-            >
-              {t("ctaMoreInfo")}
-            </button>
+            
           </div>
 
           <Image
@@ -36,6 +31,7 @@ const Banner = () => {
             alt="banner-image"
             width={1200}
             height={598}
+            className="pt-5"
           />
         </div>
       </div>
