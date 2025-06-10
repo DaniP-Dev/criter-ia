@@ -8,7 +8,8 @@ export const metadata = {
   description:
     "Criter-IA es una firma de consultoría en comunicación política que transforma datos en poder narrativo. Creamos, posicionamos y fortalecemos líderes políticos con inteligencia digital, análisis territorial y estrategias de influencia.",
   openGraph: {
-    title: "Criter-IA | Consultoría en comunicación política y análisis de datos",
+    title:
+      "Criter-IA | Consultoría en comunicación política y análisis de datos",
     description:
       "Transformamos datos en poder narrativo para líderes políticos. Estrategias personalizadas, escucha social, análisis territorial y tecnología propia para decisiones precisas y segmentadas.",
     url: "https://criter-ia.vercel.app",
@@ -26,7 +27,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Criter-IA | Consultoría en comunicación política y análisis de datos",
+    title:
+      "Criter-IA | Consultoría en comunicación política y análisis de datos",
     description:
       "Consultoría política basada en datos, escucha social y tecnología propia. Impulsa tu liderazgo con Criter-IA.",
     images: ["https://criter-ia.vercel.app/imgs/logoLink.png"],
@@ -46,6 +48,9 @@ export const metadata = {
   authors: [{ name: "Criter-IA", url: "https://criter-ia.vercel.app" }],
   creator: "Criter-IA",
   publisher: "Criter-IA",
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" }],
+  },
 };
 
 export default async function LocaleLayout({
