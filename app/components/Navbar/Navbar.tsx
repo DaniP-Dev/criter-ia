@@ -7,6 +7,7 @@ import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import CtaButton from "./CtaButton";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 interface NavigationItem {
   name: string;
@@ -48,18 +49,20 @@ const Navbar = () => {
         <div className="mx-auto max-w-7xl px-6 lg:py-4 lg:px-8">
           <div className="relative flex h-20 items-center justify-between">
             <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
-              {/* LOGO */}
-
-              <div className="flex flex-shrink-0 items-center">
-                <img
+              {/* LOGO */}              <div className="flex flex-shrink-0 items-center">
+                <Image
                   className="block h-12 w-40 object-contain lg:hidden"
                   src={"/imgs/bannerFW.png"}
                   alt="dsign-logo"
+                  width={160}
+                  height={48}
                 />
-                <img
+                <Image
                   className="hidden lg:block h-20 w-48 object-contain"
                   src={"/imgs/bannerFW.png"}
                   alt="dsign-logo"
+                  width={192}
+                  height={80}
                 />
               </div>
 

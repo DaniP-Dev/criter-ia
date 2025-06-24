@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const HTMLFlipBook = dynamic(() => import("react-pageflip"), { ssr: false });
 
@@ -56,33 +57,40 @@ export default function NewsletterPDF() {
             swipeDistance={30}
             renderOnlyPageLengthChange={false}
             showPageCorners={true}
-            disableFlipByClick={false}
-          >
+            disableFlipByClick={false}          >
             {/* Portada */}
-            <img
+            <Image
               src="/pdf/imgs/portada.png"
               alt="Portada del Newsletter"
+              width={300}
+              height={500}
               className="h-full w-auto mx-auto bg-white"
             />
 
             {/* Página 1 */}
-            <img
+            <Image
               src="/assets/newsletter/leaf.svg"
               alt="Página 1"
+              width={300}
+              height={500}
               className="object-contain w-full h-full bg-white"
             />
 
             {/* Página 2 */}
-            <img
+            <Image
               src="/assets/newsletter/circel.svg"
               alt="Página 2"
+              width={300}
+              height={500}
               className="object-contain w-full h-full bg-white"
             />
 
             {/* Contraportada */}
-            <img
+            <Image
               src="/pdf/imgs/portada.jpg"
               alt="Contraportada"
+              width={300}
+              height={500}
               className="h-full w-auto mx-auto bg-white"
             />
           </HTMLFlipBook>

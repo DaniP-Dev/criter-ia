@@ -25,11 +25,9 @@ const Footer = () => {
     return (
         <div className="bg-darkblue -mt-40">
             <div className="mx-auto max-w-2xl pt-48 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="my-24 grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
-
-                    {/* COLUMN-1 */}
+                <div className="my-24 grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">                    {/* COLUMN-1 */}
                     <div className='col-span-12 sm:col-span-2 lg:col-span-4 flex flex-col items-center sm:items-start'>
-                        <img src={'/assets/footer/logo.png'} alt="logo" className='pb-8 w-32 sm:w-40 lg:w-48' />
+                        <Image src={'/assets/footer/logo.png'} alt="logo" width={192} height={60} className='pb-8 w-32 sm:w-40 lg:w-48' />
                         <div className='flex gap-4 justify-center sm:justify-start'>
                             <Link href="https://facebook.com" className='footer-fb-icons'>
                                 <Image src={'/assets/footer/facebook.svg'} alt="facebook" width={15} height={20} />
