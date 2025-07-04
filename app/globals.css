@@ -14,6 +14,16 @@ html {
     scroll-behavior: smooth !important;
 }
 
+/* Mejoras para el scroll suave en todos los dispositivos */
+* {
+    scroll-behavior: smooth;
+}
+
+/* Offset para las secciones para compensar el navbar fijo */
+section[id] {
+    scroll-margin-top: 80px;
+}
+
 html:not([data-scroll="0"]) .navbar {
     position: fixed;
     top: 0;

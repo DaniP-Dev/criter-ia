@@ -4,19 +4,24 @@ import { useTranslations } from "next-intl";
 
 interface NavigationItem {
   name: string;
-  href: string;
+  href?: string;
+  sectionId?: string;
   current: boolean;
 }
 
-const Data = () => {
+interface DataProps {
+  onNavClick: (item: NavigationItem) => void;
+}
+
+const Data = ({ onNavClick }: DataProps) => {
   const t = useTranslations("Navbar");
   const navigation: NavigationItem[] = [
-    { name: t("home"), href: "/", current: true },
-    { name: t("about"), href: "#about", current: false },
-    { name: t("portfolio"), href: "/", current: false },
-    { name: t("newsletter"), href: "#services", current: false },
-    { name: t("interactiveMap"), href: "#project", current: false },
-    { name: t("contact"), href: "#contact", current: false },
+    { name: t("home"), sectionId: "inicio", current: true },
+    { name: t("about"), sectionId: "compradores", current: false },
+    { name: t("portfolio"), sectionId: "servicios", current: false },
+    { name: t("newsletter"), sectionId: "porque", current: false },
+    { name: t("interactiveMap"), sectionId: "mapa", current: false },
+    { name: t("contact"), sectionId: "contacto", current: false },
   ];
 
   function classNames(...classes: string[]) {
@@ -29,19 +34,18 @@ const Data = () => {
         <div className="sm:block">
           <div className="space-y-1 px-5 pt-2 pb-3">
             {navigation.map((item) => (
-              <Link
+              <button
                 key={item.name}
-                href={item.href}
+                onClick={() => onNavClick(item)}
                 className={classNames(
                   item.current
                     ? "text-black hover:opacity-100"
                     : "hover:text-black hover:opacity-100",
-                  "px-2 py-1 text-lg font-normal opacity-75 block"
+                  "px-2 py-1 text-lg font-normal opacity-75 block bg-transparent border-none cursor-pointer w-full text-left"
                 )}
-                aria-current={item.current ? "page" : undefined}
               >
                 {item.name}
-              </Link>
+              </button>
             ))}
             <div className="mt-4"></div>
             <button className="bg-lightblue w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded">

@@ -14,14 +14,27 @@ export default function HomePage() {
 
   return (
     <main>
-      <Banner />
-      <Companies />
-      <Buyers />
-      <Provide />
-      <Why />
-      {/* <Network /> Map */}
-      <section className="bg-white py-16" />
-      <Newsletter />
+      <section id="inicio">
+        <Banner />
+      </section>
+      <section id="companias">
+        <Companies />
+      </section>
+      <section id="compradores">
+        <Buyers />
+      </section>
+      <section id="servicios">
+        <Provide />
+      </section>
+      <section id="porque">
+        <Why />
+      </section>
+      <section id="mapa" className="bg-white py-16">
+        {/* <Network /> Map */}
+      </section>
+      <section id="contacto">
+        <Newsletter />
+      </section>
     </main>
   );
 }

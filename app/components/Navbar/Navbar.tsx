@@ -8,16 +8,19 @@ import Drawerdata from "./Drawerdata";
 import CtaButton from "./CtaButton";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useScrollTo } from "../../hooks/useScrollTo";
 
 interface NavigationItem {
   name: string;
-  href: string;
+  href?: string;
+  sectionId?: string;
   current: boolean;
 }
 
 const Navbar = () => {
   const t = useTranslations("Navbar");
   const [isOpen, setIsOpen] = React.useState(false);
+  const { scrollToSection } = useScrollTo();
 
   useEffect(() => {
     if (isOpen) {
@@ -31,13 +34,20 @@ const Navbar = () => {
   }, [isOpen]);
 
   const navigation: NavigationItem[] = [
-    { name: t("home"), href: "/", current: true },
-    { name: t("about"), href: "#about", current: false },
-    { name: t("portfolio"), href: "/", current: false },
-    { name: t("newsletter"), href: "#services", current: false },
-    { name: t("interactiveMap"), href: "#project", current: false },
-    { name: t("contact"), href: "#contact", current: false },
+    { name: t("home"), sectionId: "inicio", current: true },
+    { name: t("about"), sectionId: "compradores", current: false },
+    { name: t("portfolio"), sectionId: "servicios", current: false },
+    { name: t("newsletter"), sectionId: "porque", current: false },
+    { name: t("interactiveMap"), sectionId: "mapa", current: false },
+    { name: t("contact"), sectionId: "contacto", current: false },
   ];
+
+  const handleNavClick = (item: NavigationItem) => {
+    if (item.sectionId) {
+      scrollToSection(item.sectionId);
+      setIsOpen(false); // Cerrar el drawer en móviles
+    }
+  };
 
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
@@ -71,19 +81,18 @@ const Navbar = () => {
               <div className="hidden lg:block m-auto">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
-                    <Link
+                    <button
                       key={item.name}
-                      href={item.href}
+                      onClick={() => handleNavClick(item)}
                       className={classNames(
                         item.current
                           ? " text-black hover:opacity-100"
                           : "hover:text-black hover:opacity-100",
-                        "px-3 py-4 text-lg font-normal opacity-75 space-links"
+                        "px-3 py-4 text-lg font-normal opacity-75 space-links bg-transparent border-none cursor-pointer"
                       )}
-                      aria-current={item.href ? "page" : undefined}
                     >
                       {item.name}
-                    </Link>
+                    </button>
                   ))}
                 </div>
               </div>
@@ -108,7 +117,7 @@ const Navbar = () => {
             {/* DRAWER LINKS DATA */}
 
             <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-              <Drawerdata />
+              <Drawerdata onNavClick={handleNavClick} />
             </Drawer>
           </div>
         </div>
