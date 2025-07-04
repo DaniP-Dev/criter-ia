@@ -79,7 +79,7 @@ const Navbar = () => {
               {/* LINKS */}
 
               <div className="hidden lg:block m-auto">
-                <div className="flex space-x-4">
+                <div className="flex space-x-2 lg:space-x-4 items-center">
                   {navigation.map((item) => (
                     <button
                       key={item.name}
@@ -88,7 +88,7 @@ const Navbar = () => {
                         item.current
                           ? " text-black hover:opacity-100"
                           : "hover:text-black hover:opacity-100",
-                        "px-3 py-4 text-lg font-normal opacity-75 space-links bg-transparent border-none cursor-pointer"
+                        "px-2 lg:px-3 py-4 text-lg font-normal opacity-75 space-links bg-transparent border-none cursor-pointer whitespace-nowrap min-w-fit"
                       )}
                     >
                       {item.name}

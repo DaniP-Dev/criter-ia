@@ -117,8 +117,9 @@ hr {
 
 .space-links {
     transition: .3s;
+    white-space: nowrap;
 }
 
 .space-links:hover {
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
