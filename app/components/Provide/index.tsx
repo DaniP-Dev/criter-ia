@@ -3,9 +3,11 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { useWhatsApp } from "../../hooks/useWhatsApp";
 
 const Provide = () => {
   const t = useTranslations("Services");
+  const { openWhatsApp } = useWhatsApp();
   
   const politicalServices = [
     {
@@ -118,9 +120,9 @@ const Provide = () => {
 
         {/* CTA SECTION */}
         <div className="text-center">
-          <Link
-            href={"/"}
-            className="inline-flex items-center gap-2 text-xl font-medium text-blue hover:text-blue-700 transition-colors"
+          <button
+            onClick={() => openWhatsApp("services")}
+            className="inline-flex items-center gap-2 text-xl font-medium text-blue hover:text-blue-700 transition-colors bg-transparent border-none cursor-pointer"
           >
             {t("learnMore")}{" "}
             <Image
@@ -129,7 +131,7 @@ const Provide = () => {
               width={20}
               height={20}
             />
-          </Link>
+          </button>
         </div>
       </div>
     </div>

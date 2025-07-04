@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import NewsletterPDF from "./NewsletterPDF";
 import { useTranslations } from "next-intl";
@@ -48,6 +49,12 @@ const Why = () => {
               <button
                 type="button"
                 className="text-15px ml-4 mt-2 text-blue transition duration-150 ease-in-out hover:text-white hover:bg-blue font-medium py-5 px-16 border border-lightgrey leafbutton"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/pdf/pruebaPDF.pdf';
+                  link.download = 'Boletin-Comunicacion-Digital-Colombia.pdf';
+                  link.click();
+                }}
               >
                 {t("ctaMoreInfo")}
               </button>

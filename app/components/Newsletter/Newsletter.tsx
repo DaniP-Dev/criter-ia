@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useWhatsApp } from "../../hooks/useWhatsApp";
 
 const Newsletter = () => {
     const t = useTranslations("Newsletter");
+    const { openWhatsApp } = useWhatsApp();
     return (
         <div className='-mt-32 relative z-3'>
             <div className="mx-auto max-w-2xl lg:max-w-7xl bg-blue-500 rounded-3xl">
@@ -32,7 +35,10 @@ const Newsletter = () => {
                         <div className="flex gap-0">
                             <input type="Email address" name="q" className="py-4 text-sm w-full text-black bg-white rounded-l-lg pl-4" placeholder={t("placeholder")}
                                 autoComplete="off" />
-                            <button className="bg-midblue text-white font-medium py-2 px-4 rounded-r-lg">
+                            <button 
+                                className="bg-midblue text-white font-medium py-2 px-4 rounded-r-lg"
+                                onClick={() => openWhatsApp("contact", "¡Hola! Me gustaría suscribirme al boletín digital de Criteria")}
+                            >
                                 <Image src={'/assets/newsletter/plane.svg'} alt="plane-img" width={20} height={20} />
                             </button>
                         </div>

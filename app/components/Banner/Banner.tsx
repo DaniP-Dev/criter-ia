@@ -1,8 +1,11 @@
+"use client";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useWhatsApp } from "../../hooks/useWhatsApp";
 
 const Banner = () => {
   const t = useTranslations("Banner");
+  const { openWhatsApp } = useWhatsApp();
   return (
     <main>
       <div className="px-6 lg:px-8">
@@ -20,6 +23,7 @@ const Banner = () => {
             <button
               type="button"
               className="text-15px text-white font-medium bg-blue py-5 px-9 mt-2 leafbutton"
+              onClick={() => openWhatsApp("banner")}
             >
               {t("ctaPortfolio")}
             </button>

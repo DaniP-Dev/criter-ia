@@ -1,17 +1,14 @@
 "use client";
 import React from "react";
+import { useWhatsApp } from "../../hooks/useWhatsApp";
 
 const CtaButton = () => {
-  const whatsappNumber = "3016328564";
-  const message = encodeURIComponent(
-    "¡Hola! Quiero más información sobre sus servicios."
-  );
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+  const { openWhatsApp } = useWhatsApp();
 
   const handleClick = () => {
     // Pequeño delay para que el efecto active se vea
     setTimeout(() => {
-      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+      openWhatsApp("contact");
     }, 300); // 120ms es suficiente para ver el efecto
   };
 
