@@ -1,26 +1,47 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const Clientsay = () => {
+    const t = useTranslations("About");
+    
     return (
-        <div className="mx-auto max-w-2xl py-40 px-4s sm:px-6 lg:max-w-7xl lg:px-8">
-            <div className="bg-image-what">
-                <h3 className='text-navyblue text-center text-4xl lg:text-6xl font-semibold'>What say clients about us.</h3>
-                <h4 className="text-lg font-normal text-darkgray text-center mt-4">Event madness gathering innoies,& tech enthusiasts in Speced. <br /> do more informations.</h4>
-
-                <div className="lg:relative">
-                    <Image src={'/assets/clientsay/avatars.png'} alt="avatar-image" width={1061} height={733} className="hidden lg:block" />
-
-                    <span className="lg:absolute lg:bottom-40 lg:left-80">
-                        <Image src={'/assets/clientsay/user.png'} alt="user-image" width={168} height={168} className="mx-auto pt-10 lg:pb-10" />
-                        <div className="lg:inline-block bg-white rounded-2xl p-5 shadow-sm">
-                            <p className="text-base font-normal text-center text-darkgray">Build your financial literacy within a transparent <br /> community. Follow other investors, share people from <br /> different professional backgrounds, and never be alone.</p>
-                            <h3 className="text-2xl font-medium text-center py-2">Jony Scotty</h3>
-                            <h4 className="text-sm font-normal text-center">UI Designer</h4>
-                        </div>
-                    </span>
-
+        <div className="mx-auto max-w-7xl py-20 px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+                <h2 className="text-4xl lg:text-6xl font-semibold text-navyblue mb-8">
+                    {t("title")}
+                </h2>
+                <div className="max-w-4xl mx-auto">
+                    <p className="text-xl lg:text-2xl font-normal text-darkgray leading-relaxed">
+                        {t("description")}
+                    </p>
                 </div>
-
+                
+                {/* Elementos visuales decorativos */}
+                <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="flex flex-col items-center p-6">
+                        <div className="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-4">
+                            <span className="text-white text-2xl font-bold">📊</span>
+                        </div>
+                        <h3 className="text-lg font-semibold text-navyblue mb-2">{t("strategy.title")}</h3>
+                        <p className="text-sm text-darkgray text-center">{t("strategy.desc")}</p>
+                    </div>
+                    
+                    <div className="flex flex-col items-center p-6">
+                        <div className="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-4">
+                            <span className="text-white text-2xl font-bold">📈</span>
+                        </div>
+                        <h3 className="text-lg font-semibold text-navyblue mb-2">{t("data.title")}</h3>
+                        <p className="text-sm text-darkgray text-center">{t("data.desc")}</p>
+                    </div>
+                    
+                    <div className="flex flex-col items-center p-6">
+                        <div className="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-4">
+                            <span className="text-white text-2xl font-bold">🎯</span>
+                        </div>
+                        <h3 className="text-lg font-semibold text-navyblue mb-2">{t("experience.title")}</h3>
+                        <p className="text-sm text-darkgray text-center">{t("experience.desc")}</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

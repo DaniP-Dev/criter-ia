@@ -1,48 +1,59 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-interface aboutCardType {
+interface methodCardType {
     imgSrc: string;
     heading: string;
     description: string;
 }
 
 const About = () => {
-    const t = useTranslations("About");
+    const t = useTranslations("Method");
 
-    const aboutData: aboutCardType[] = [
+    const methodData: methodCardType[] = [
         {
             imgSrc: '/assets/about/mission.svg',
-            heading: t('mission.heading'),
-            description: t('mission.description'),
+            heading: t('diagnosis.heading'),
+            description: t('diagnosis.description'),
         },
         {
             imgSrc: '/assets/about/vision.svg',
-            heading: t('vision.heading'),
-            description: t('vision.description'),
+            heading: t('strategy.heading'),
+            description: t('strategy.description'),
         },
         {
             imgSrc: '/assets/about/values.svg',
-            heading: t('values.heading'),
-            description: t('values.description'),
+            heading: t('narrative.heading'),
+            description: t('narrative.description'),
         },
         {
             imgSrc: '/assets/about/team.svg',
-            heading: t('team.heading'),
-            description: t('team.description'),
+            heading: t('support.heading'),
+            description: t('support.description'),
         }
     ];
 
     return (
         <div className='mx-auto max-w-7xl py-16 px-6'>
+            {/* HEADER SECTION */}
+            <div className="text-center mb-16">
+                <h2 className="text-4xl lg:text-6xl font-semibold mb-6">
+                    {t("title")}
+                </h2>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                    {t("subtitle")}
+                </p>
+            </div>
+
+            {/* CARDS SECTION */}
             <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-5'>
-                {aboutData.map((item, i) => (
-                    <div className="flex flex-col justify-start items-stretch min-h-[370px] bg-white rounded-lg shadow p-4" key={i}>
-                        <div className="flex justify-center border border-border p-2 w-16 h-16 rounded-lg bg-white mx-auto">
+                {methodData.map((item, i) => (
+                    <div className="flex flex-col justify-start items-stretch min-h-[370px] bg-white rounded-lg shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-shadow" key={i}>
+                        <div className="flex justify-center border border-blue border-opacity-20 p-3 w-20 h-20 rounded-lg bg-blue bg-opacity-10 mx-auto mb-6">
                             <Image src={item.imgSrc} alt={item.heading} width={48} height={48} />
                         </div>
-                        <h3 className="text-2xl text-black font-semibold text-center mt-5">{item.heading}</h3>
-                        <p className="text-lg font-normal text-black text-center text-opacity-70 mt-2">{item.description}</p>
+                        <h3 className="text-xl text-navyblue font-semibold text-center mb-4">{item.heading}</h3>
+                        <p className="text-base font-normal text-gray-600 text-center leading-relaxed flex-grow">{item.description}</p>
                     </div>
                 ))}
             </div>

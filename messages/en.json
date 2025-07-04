@@ -3,7 +3,41 @@
     "title": "Hello world!",
     "about": "Go to the about page"
   },
+  "Method": {
+    "title": "HOW DO WE WORK?",
+    "subtitle": "Our methodology is based on four fundamental pillars that guarantee effective and measurable results.",
+    "diagnosis": {
+      "heading": "Deep Diagnosis",
+      "description": "We don't propose without understanding. We conduct exhaustive analysis before any strategic recommendation."
+    },
+    "strategy": {
+      "heading": "Measurable Strategy",
+      "description": "Every action must have a purpose. We design strategies with clear objectives and defined success metrics."
+    },
+    "narrative": {
+      "heading": "Coherent Narrative",
+      "description": "Across all channels, with all audiences. We build consistent messages aligned with the strategy."
+    },
+    "support": {
+      "heading": "Continuous Support",
+      "description": "We don't sell inputs. We build processes. From idea to published content, we accompany you every step of the way."
+    }
+  },
   "About": {
+    "title": "Who We Are",
+    "description": "At Criteria we combine strategy, data and experience to transform political and corporate communication into a real power tool. Our specialty: turning analysis into action.",
+    "strategy": {
+      "title": "Strategy",
+      "desc": "Deep analysis and strategic planning"
+    },
+    "data": {
+      "title": "Data",
+      "desc": "Digital intelligence and territorial analysis"
+    },
+    "experience": {
+      "title": "Experience",
+      "desc": "Effective political and corporate communication"
+    },
     "mission": {
       "heading": "Who We Are",
       "description": "We are a political communication consulting firm that transforms data into narrative power. We help create, position, and strengthen political leaders using digital intelligence, territorial analysis, and influence strategies."
@@ -23,10 +57,10 @@
   },
   "Navbar": {
     "home": "Home",
-    "about": "About",
-    "portfolio": "Portfolio",
-    "newsletter": "Newsletter",
-    "interactiveMap": "Interactive Map",
+    "about": "Who We Are",
+    "method": "Our Method",
+    "services": "Services",
+    "brochure": "Brochure",
     "contact": "Contact"
   },
   "ButtonCTA": {
@@ -38,38 +72,34 @@
     "ctaPortfolio": "Explore our services"
   },
   "Services": {
-    "title": "We provide that service.",
-    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo",
+    "title": "WHAT WE DO",
+    "description": "We offer two main service lines specialized in political and business communication, with customized solutions and cutting-edge technology.",
     "learnMore": "Learn more",
     "showMore": "Show more",
     "showLess": "Show less",
-    "service1": {
-      "title": "Social Listening",
-      "desc": "Monitoring trends, sentiment analysis, crisis management, and use of specialized tools."
+    "politicalLine": {
+      "title": "Political Line",
+      "description": "Specialized services for the political and public sector"
     },
-    "service2": {
-      "title": "Counter-campaign Strategy",
-      "desc": "Oriented social listening, emergency communication, and narrative studies."
+    "businessLine": {
+      "title": "Business Line",
+      "description": "Solutions for companies, organizations and institutions"
     },
-    "service3": {
-      "title": "Personal Branding",
-      "desc": "Profiling, demographic analysis, narrative context, and identity manual."
+    "political1": {
+      "title": "Services for Political Campaigns",
+      "desc": "Digital strategy, personal branding, political platform and strategic relationships for candidates and political movements."
     },
-    "service4": {
-      "title": "Political Platform",
-      "desc": "Advisory team formation, resonance groups, media plan, and volunteer school."
+    "political2": {
+      "title": "Services for Governments and Public Entities",
+      "desc": "Government communication consulting, crisis management, territorial analysis and institutional strengthening."
     },
-    "service5": {
-      "title": "Digital Strategy and Social Media",
-      "desc": "Digital strategy design, audience segmentation, and narrative positioning."
+    "business1": {
+      "title": "Services for Companies, Organizations and Institutions",
+      "desc": "Social listening, communication strategy, reputation management and brand positioning in political and social environments."
     },
-    "service6": {
-      "title": "Demographic and Territorial Studies",
-      "desc": "Electoral analysis, niche identification, and vote migration studies."
-    },
-    "service7": {
-      "title": "Strategic Relations and Media",
-      "desc": "Political alliances, media management, and public image consulting."
+    "business2": {
+      "title": "Training for Spokespersons, Leaders and Influencers",
+      "desc": "Specialized training in political communication, media management, narrative construction and public leadership."
     }
   },
   "Why": {

@@ -3,7 +3,41 @@
         "title": "¡Hola, mundo!",
         "about": "Ir a la página de información"
     },
+    "Method": {
+        "title": "¿CÓMO TRABAJAMOS?",
+        "subtitle": "Nuestra metodología se basa en cuatro pilares fundamentales que garantizan resultados efectivos y medibles.",
+        "diagnosis": {
+            "heading": "Diagnóstico Profundo",
+            "description": "No proponemos sin entender. Realizamos un análisis exhaustivo antes de cualquier recomendación estratégica."
+        },
+        "strategy": {
+            "heading": "Estrategia Medible",
+            "description": "Cada acción debe tener un para qué. Diseñamos estrategias con objetivos claros y métricas de éxito definidas."
+        },
+        "narrative": {
+            "heading": "Narrativa Coherente",
+            "description": "En todos los canales, con todos los públicos. Construimos mensajes consistentes y alineados con la estrategia."
+        },
+        "support": {
+            "heading": "Acompañamiento Continuo",
+            "description": "No vendemos insumos. Construimos procesos. Desde la idea hasta el contenido publicado, te acompañamos en cada paso."
+        }
+    },
     "About": {
+        "title": "Quiénes Somos",
+        "description": "En Criteria combinamos estrategia, datos y experiencia para transformar la comunicación política y corporativa en una herramienta de poder real. Nuestra especialidad: convertir el análisis en acción.",
+        "strategy": {
+            "title": "Estrategia",
+            "desc": "Análisis profundo y planificación estratégica"
+        },
+        "data": {
+            "title": "Datos",
+            "desc": "Inteligencia digital y análisis territorial"
+        },
+        "experience": {
+            "title": "Experiencia",
+            "desc": "Comunicación política y corporativa efectiva"
+        },
         "mission": {
             "heading": "¿Quiénes Somos?",
             "description": "Somos una firma de consultoría en comunicación política que transforma datos en poder narrativo. Acompañamos la creación, posicionamiento y consolidación de líderes políticos con herramientas de inteligencia digital, análisis territorial y estrategia de influencia."
@@ -23,10 +57,10 @@
     },
     "Navbar": {
         "home": "Inicio",
-        "about": "Nosotros",
-        "portfolio": "Servicios",
-        "newsletter": "Boletín",
-        "interactiveMap": "Mapa",
+        "about": "Quiénes Somos",
+        "method": "Nuestro Método",
+        "services": "Servicios",
+        "brochure": "Brochure",
         "contact": "Contacto"
     },
     "ButtonCTA": {
@@ -38,38 +72,34 @@
         "ctaPortfolio": "Conoce nuestros servicios"
     },
     "Services": {
-        "title": "Ofrecemos estos servicios.",
-        "description": "Descubre cómo nuestros servicios de consultoría en comunicación política pueden ayudarte a potenciar tu liderazgo, mejorar tu posicionamiento y alcanzar tus objetivos estratégicos con soluciones personalizadas y tecnología de vanguardia.",
+        "title": "LO QUE HACEMOS",
+        "description": "Ofrecemos dos grandes líneas de servicio especializadas en comunicación política y empresarial, con soluciones personalizadas y tecnología de vanguardia.",
         "learnMore": "Conoce más",
         "showMore": "Ver más",
         "showLess": "Ver menos",
-        "service1": {
-            "title": "Social Listening",
-            "desc": "Monitoreo de tendencias, análisis de sentimiento, gestión de crisis y uso de herramientas especializadas."
+        "politicalLine": {
+            "title": "Línea Política",
+            "description": "Servicios especializados para el sector político y público"
         },
-        "service2": {
-            "title": "Estrategia de Contra campaña",
-            "desc": "Social listening orientado, comunicación de emergencia y estudios narrativos."
+        "businessLine": {
+            "title": "Línea Empresarial", 
+            "description": "Soluciones para empresas, organizaciones e instituciones"
         },
-        "service3": {
-            "title": "Personal Branding",
-            "desc": "Perfilamiento, análisis demográfico, contexto narrativo y manual de identidad."
+        "political1": {
+            "title": "Servicios para Campañas Políticas",
+            "desc": "Estrategia digital, personal branding, plataforma política y relacionamiento estratégico para candidatos y movimientos políticos."
         },
-        "service4": {
-            "title": "Plataforma Política",
-            "desc": "Formación de equipo asesor, grupos de resonancia, plan de medios y escuela de voluntarios."
+        "political2": {
+            "title": "Servicios para Gobiernos y Entidades Públicas",
+            "desc": "Consultoría en comunicación gubernamental, gestión de crisis, análisis territorial y fortalecimiento institucional."
         },
-        "service5": {
-            "title": "Estrategia Digital y Redes Sociales",
-            "desc": "Diseño de estrategia digital, segmentación de audiencias y posicionamiento de narrativa."
+        "business1": {
+            "title": "Servicios para Empresas, Organizaciones e Instituciones",
+            "desc": "Social listening, estrategia de comunicación, gestión de reputación y posicionamiento de marca en entornos políticos y sociales."
         },
-        "service6": {
-            "title": "Estudios Demográficos y Territoriales",
-            "desc": "Análisis electoral, identificación de nichos y estudios de migración de voto."
-        },
-        "service7": {
-            "title": "Relacionamiento Estratégico y Medios",
-            "desc": "Alianzas políticas, gestión de medios y asesoría en imagen pública."
+        "business2": {
+            "title": "Entrenamiento de Voceros, Líderes e Influenciadores",
+            "desc": "Formación especializada en comunicación política, manejo de medios, construcción de narrativas y liderazgo público."
         }
     },
     "Why": {

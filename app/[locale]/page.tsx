@@ -16,23 +16,21 @@ export default function HomePage() {
     <main>
       <section id="inicio">
         <Banner />
-      </section>
-      <section id="companias">
         <Companies />
       </section>
-      <section id="compradores">
+      <section id="quienes-somos">
+        <Clientsay />
+      </section>
+      <section id="nuestro-metodo">
         <Buyers />
       </section>
       <section id="servicios">
         <Provide />
       </section>
-      <section id="porque">
+      <section id="brochure" className="pb-8 md:pb-16">
         <Why />
       </section>
-      <section id="mapa" className="bg-white py-16">
-        {/* <Network /> Map */}
-      </section>
-      <section id="contacto">
+      <section id="contacto" className="pt-16 md:pt-8">
         <Newsletter />
       </section>
     </main>
