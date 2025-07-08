@@ -16,9 +16,11 @@ export default function LanguageSwitcher() {
   const pathWithoutLocale = "/" + segments.slice(2).join("/");
 
   return (
-    <Link href={pathWithoutLocale === "/" ? "/" : pathWithoutLocale} locale={nextLocale}>      <button
+    <Link href={pathWithoutLocale === "/" ? "/" : pathWithoutLocale} locale={nextLocale}>
+      <button
         className="flex items-center gap-2 px-3 py-2 rounded-md border border-blue bg-lightblue text-blue font-medium shadow-sm hover:bg-blue hover:text-white transition-colors duration-150"
         title={nextLocale === "es" ? "Cambiar a Español" : "Switch to English"}
+        aria-label={nextLocale === "es" ? "Cambiar a Español" : "Switch to English"}
       >
         <Image
           src={nextLocale === "es" ? "/imgs/flagEs.png" : "/imgs/flagEn.png"}
