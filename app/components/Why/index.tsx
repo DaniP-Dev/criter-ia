@@ -10,9 +10,12 @@ const Why = () => {
   return (
     <div id="about">
       <div className="mx-auto max-w-7xl px-4 my-20 sm:py-20 lg:px-8">
-        <h3 className="text-4xl lg:text-5xl pt-4 font-bold tracking-tight sm:leading-tight mt-5 text-center lg:text-start text-gray-900">
+        <h3 className="text-4xl lg:text-5xl pt-4 font-bold tracking-tight sm:leading-tight mt-5 text-center text-gray-900">
           {t("title")}
         </h3>
+        <h4 className="text-lg pt-4 font-medium sm:leading-tight text-center text-beach mx-auto">
+          {t("subtitle")}
+        </h4>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* COLUMN-1 */}
           <div className="lg:-ml-64">
@@ -21,10 +24,6 @@ const Why = () => {
 
           {/* COLUMN-2 */}
           <div>
-            <h4 className="text-lg pt-4 font-medium sm:leading-tight text-center text-beach lg:text-start max-w-2xl mx-auto lg:mx-0">
-              {t("subtitle")}
-            </h4>
-
             <div className="mt-10">
               {items.map((item: any, i: number) => (
                 <div className="flex mt-4" key={i}>
@@ -50,9 +49,9 @@ const Why = () => {
                 type="button"
                 className="text-15px ml-4 mt-2 text-blue transition duration-150 ease-in-out hover:text-white hover:bg-blue font-medium py-5 px-16 border border-lightgrey leafbutton"
                 onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = '/pdf/pruebaPDF.pdf';
-                  link.download = 'Boletin-Comunicacion-Digital-Colombia.pdf';
+                  const link = document.createElement("a");
+                  link.href = "/pdf/pruebaPDF.pdf";
+                  link.download = "Boletin-Comunicacion-Digital-Colombia.pdf";
                   link.click();
                 }}
               >
