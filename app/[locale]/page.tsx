@@ -16,6 +16,9 @@ export default function HomePage() {
     <main>
       <section id="inicio">
         <Banner />
+      </section>
+      <section id="brochure" className="pb-8 md:pb-16">
+        <Why />
         <Companies />
       </section>
       <section id="quienes-somos">
@@ -26,9 +29,6 @@ export default function HomePage() {
       </section>
       <section id="servicios">
         <Provide />
-      </section>
-      <section id="brochure" className="pb-8 md:pb-16">
-        <Why />
       </section>
       <section id="contacto" className="pt-16 md:pt-8">
         <Newsletter />

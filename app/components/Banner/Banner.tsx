@@ -36,14 +36,6 @@ const Banner = () => {
               </button>
             </div>
           </div>
-
-          <Image
-            src={"/imgs/4Grid.png"}
-            alt="banner-image"
-            width={1200}
-            height={598}
-            className="pt-5"
-          />
         </div>
       </div>
     </main>
