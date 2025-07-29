@@ -11,6 +11,12 @@ const withNextIntl = createNextIntlPlugin({
 });
 
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
+const csp = isProd
+  ? "default-src 'self'; style-src 'self' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; script-src 'self'; img-src 'self' data:;"
+  : "default-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:;";
+
 const nextConfig = {
   async headers() {
     return [
@@ -19,7 +25,7 @@ const nextConfig = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline';",
+            value: csp,
           },
           {
             key: "Strict-Transport-Security",
