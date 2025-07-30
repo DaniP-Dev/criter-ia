@@ -107,7 +107,8 @@
         "subtitle": "CONSULTA POPULAR DEL GOBIERNO PETRO: Análisis de las conversaciones en redes sociales",
         "context": "Este informe inaugura una serie de boletines de análisis de escucha digital elaborados por la Agencia Criteria, con el propósito de ofrecer al público una mirada informada sobre los grandes temas de la vida pública en Colombia",
         "instructionsForUse": "Explora la portada y navega el boletín digital como un libro interactivo. Utiliza las flechas para avanzar o retroceder páginas, descarga el PDF completo o amplía a pantalla completa para una mejor experiencia de lectura",
-        "ctaMoreInfo": "Descarga el Boletín Digital"
+        "ctaMoreInfo": "Descarga el Boletín Digital",
+        "items": []
     },
     "Footer": {
         "address": "Estados Unidos, Miami - Colombia, Bogotá, Medellín, Bucaramanga",
