@@ -34,8 +34,8 @@ export default function NewsletterPDF() {
         >
           <HTMLFlipBook
             ref={bookRef}
-            width={0}
-            height={0}
+            width={1}
+            height={1}
             size="fixed"
             autoSize={false}
             maxShadowOpacity={0.5}
