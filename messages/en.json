@@ -103,24 +103,11 @@
     }
   },
   "Why": {
-    "title": "Digital Communication Newsletter in Colombia",
-    "subtitle": "PETRO GOVERNMENT'S POPULAR CONSULTATION: Analysis of conversations on social media",
-    "ctaMoreInfo": "Download the Digital Newsletter",
-    "checkAlt": "Check icon",
-    "items": [
-      {
-        "heading": "Quality",
-        "subheading": "We provide verified and up-to-date information on digital communication in Colombia."
-      },
-      {
-        "heading": "Communication",
-        "subheading": "We facilitate access to trends, analysis, and key resources in the digital sector."
-      },
-      {
-        "heading": "Reliability",
-        "subheading": "Our newsletter is a reliable source for professionals and enthusiasts in the field."
-      }
-    ]
+    "title": "Digital Communication Bulletin in Colombia",
+    "subtitle": "PETRO GOVERNMENT'S POPULAR CONSULTATION: Analysis of Social Media Conversations",
+    "context": "This report launches a series of digital listening analysis bulletins prepared by Criteria Agency, aiming to provide the public with an informed perspective on major public issues in Colombia.",
+    "instructionsForUse": "Explore the cover and navigate the digital bulletin like an interactive book. Use the arrows to move forward or backward, download the full PDF, or expand to full screen for a better reading experience.",
+    "ctaMoreInfo": "Download the Digital Bulletin"
   },
   "Footer": {
     "address": "Estados Unidos, Miami - Colombia, Bogotá, Medellín, Bucaramanga",

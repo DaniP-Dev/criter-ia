@@ -19,7 +19,6 @@ export default function HomePage() {
       </section>
       <section id="brochure" className="pb-8 md:pb-16">
         <Why />
-        <Companies />
       </section>
       <section id="quienes-somos">
         <Clientsay />

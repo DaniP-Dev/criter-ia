@@ -9,17 +9,17 @@ export default function NewsletterPDF() {
   const bookRef = useRef<any>(null);
 
   return (
-    <div className="flex flex-col items-center p-6 space-y-4">
+    <div className="flex flex-col items-center">
       {/* Controles */}
       <div className="space-x-4">
         <button
-          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+          className="px-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
           onClick={() => bookRef.current.pageFlip().flipPrev()}
         >
           ← Anterior
         </button>
         <button
-          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+          className="px-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
           onClick={() => bookRef.current.pageFlip().flipNext()}
         >
           Siguiente →
@@ -34,8 +34,8 @@ export default function NewsletterPDF() {
         >
           <HTMLFlipBook
             ref={bookRef}
-            width={300}
-            height={500}
+            width={0}
+            height={0}
             size="fixed"
             autoSize={false}
             maxShadowOpacity={0.5}
@@ -95,8 +95,6 @@ export default function NewsletterPDF() {
             />
           </HTMLFlipBook>
         </div>
-        {/* Sombra elíptica decorativa */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[200px] h-8 bg-black/60 rounded-full blur-lg opacity-90 z-0" />
       </div>
     </div>
   );

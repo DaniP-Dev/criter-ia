@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import "./Why.css";
 import NewsletterPDF from "./NewsletterPDF";
 import { useTranslations } from "next-intl";
 
@@ -8,56 +9,47 @@ const Why = () => {
   const items = t.raw("items");
 
   return (
-    <div id="about">
-      <div className="mx-auto max-w-7xl px-4 my-20 sm:py-20 lg:px-8">
-        <h3 className="text-4xl lg:text-5xl pt-4 font-bold tracking-tight sm:leading-tight mt-5 text-center text-gray-900">
-          {t("title")}
-        </h3>
-        <h4 className="text-lg pt-4 font-medium sm:leading-tight text-center text-beach mx-auto">
-          {t("subtitle")}
-        </h4>
-        <div className="grid grid-cols-1 lg:grid-cols-2">
-          {/* COLUMN-1 */}
-          <div className="lg:-ml-64">
+    <div className="min-h-100 flex-col relative overflow-hidden container" style={{position: 'relative', overflow: 'hidden'}}>
+      {/* Círculos animados de fondo */}
+      <span className="circle small shade1"></span>
+      <span className="circle medium shade2"></span>
+      <span className="circle large shade3"></span>
+      <span className="circle xlarge shade4"></span>
+      <span className="circle xxlarge shade5"></span>
+      {/* Contenido principal con z-index superior */}
+      <div style={{position: 'relative', zIndex: 1}}>
+        <div className="mt-12 mb-8">
+          <h3 className="text-4xl lg:text-5xl font-bold tracking-tight sm:leading-tight text-center text-gray-900">
+            {t("title")}
+          </h3>
+          <h4 className="text-lg font-medium sm:leading-tight text-center text-white mx-auto">
+            {t("subtitle")}
+          </h4>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-0 mx-10 md:mx-36">
+          <div className=" md:col-span-6">
             <NewsletterPDF />
           </div>
-
-          {/* COLUMN-2 */}
-          <div>
-            <div className="mt-10">
-              {items.map((item: any, i: number) => (
-                <div className="flex mt-4" key={i}>
-                  <div className="rounded-full h-10 w-12 flex items-center justify-center bg-circlebg">
-                    <Image
-                      src="/assets/why/check.svg"
-                      alt={t("checkAlt")}
-                      width={24}
-                      height={24}
-                    />
-                  </div>
-                  <div className="ml-5">
-                    <h4 className="text-2xl font-semibold text-gray-900">
-                      {item.heading}
-                    </h4>
-                    <h5 className="text-lg text-beach font-normal mt-2">
-                      {item.subheading}
-                    </h5>
-                  </div>
-                </div>
-              ))}
-              <button
-                type="button"
-                className="text-15px ml-4 mt-2 text-blue transition duration-150 ease-in-out hover:text-white hover:bg-blue font-medium py-5 px-16 border border-lightgrey leafbutton"
-                onClick={() => {
-                  const link = document.createElement("a");
-                  link.href = "/pdf/pruebaPDF.pdf";
-                  link.download = "Boletin-Comunicacion-Digital-Colombia.pdf";
-                  link.click();
-                }}
-              >
-                {t("ctaMoreInfo")}
-              </button>
+          <div className="mt-4 md:mt-0 md:col-span-5 ">
+            <div className="text-lg font-normal sm:leading-tight text-white mx-auto text-justify">
+              {t("context")}
+              <br />
+              <br />
+              {t("instructionsForUse")}
             </div>
+            <button
+              type="button"
+              className="text-15px mt-2 text-white transition duration-150 ease-in-out hover:text-blue hover:bg-white font-medium py-5 px-16 border border-lightgrey leafbutton mx-auto block"
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/pdf/pruebaPDF.pdf";
+                link.download = "Boletin-Comunicacion-Digital-Colombia.pdf";
+                link.click();
+              }}
+            >
+              {t("ctaMoreInfo")}
+            </button>
           </div>
         </div>
       </div>
