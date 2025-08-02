@@ -1,9 +1,6 @@
 const createNextIntlPlugin = require('next-intl/plugin');
 
 const withNextIntl = createNextIntlPlugin({
-  // Configuración opcional: puedes especificar los locales soportados y el default
-  // locales: ['en', 'es'],
-  // defaultLocale: 'es',
   messages: {
     locales: ['en', 'es'],
     path: './messages',
@@ -14,8 +11,8 @@ const withNextIntl = createNextIntlPlugin({
 const isProd = process.env.NODE_ENV === 'production';
 
 const csp = isProd
-  ? "default-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:;"
-  : "default-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:;";
+  ? "default-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; script-src 'self' 'unsafe-inline'; worker-src 'self'; img-src 'self' data:;"
+  : "default-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com; worker-src 'self' blob: https://unpkg.com; img-src 'self' data:;";
 
 const nextConfig = {
   async headers() {

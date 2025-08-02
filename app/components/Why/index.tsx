@@ -27,12 +27,12 @@ const Why = () => {
           </h4>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-0 mx-10 md:mx-36">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-3 mx-10 md:mx-36 pb-5">
           <div className=" md:col-span-6">
             <NewsletterPDF />
           </div>
           <div className="mt-4 md:mt-0 md:col-span-5 ">
-            <div className="text-lg font-normal sm:leading-tight text-white mx-auto text-justify">
+            <div className="text-lg font-normal sm:leading-tight text-black md:text-white mx-auto text-justify md:text-center md:pt-20">
               {t("context")}
               <br />
               <br />
@@ -40,7 +40,7 @@ const Why = () => {
             </div>
             <button
               type="button"
-              className="text-15px mt-2 text-white transition duration-150 ease-in-out hover:text-blue hover:bg-white font-medium py-5 px-16 border border-lightgrey leafbutton mx-auto block"
+              className="text-15px mt-2 text-white md:text-[#3399FF] transition duration-150 ease-in-out hover:text-blue bg-[#3399FF] md:bg-white hover:bg-white font-medium py-5 px-16 border border-lightgrey leafbutton mx-auto block"
               onClick={() => {
                 const link = document.createElement("a");
                 link.href = "/pdf/pruebaPDF.pdf";
