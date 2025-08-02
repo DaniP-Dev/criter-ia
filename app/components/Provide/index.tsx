@@ -56,27 +56,27 @@ const Provide = () => {
               {t("service_lines_title")}
             </h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex gap-4 overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-x-visible scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-blue-50">
             {serviceLines.map((service, i) => (
               <div
                 key={i}
-                className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow flex flex-col"
+                className="min-w-[240px] md:min-w-0 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow flex flex-col"
               >
                 <Image
                   src={service.imgSrc}
                   alt={service.title}
-                  width={80}
-                  height={80}
-                  className="mb-6"
+                  width={56}
+                  height={56}
+                  className="mb-3"
                 />
-                <h4 className="text-2xl font-semibold mb-4 text-gray-800">
+                <h4 className="text-lg font-semibold mb-2 text-gray-800">
                   {service.title}
                 </h4>
-                <p className="text-lg text-bluegray leading-relaxed mb-4">
+                <p className="text-base text-bluegray leading-snug mb-2">
                   {service.desc}
                 </p>
                 {Array.isArray(service.features) && (
-                  <ul className="list-disc pl-5 text-bluegray text-base">
+                  <ul className="list-disc pl-4 text-bluegray text-sm">
                     {service.features.map((feature: string, idx: number) => (
                       <li key={idx}>{feature}</li>
                     ))}
@@ -90,7 +90,7 @@ const Provide = () => {
         {/* CLIENTS SECTION */}
         <div className="mt-24">
           <h3 className="text-3xl lg:text-4xl font-semibold text-blue mb-10 text-center">{t("clients_title")}</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="flex gap-4 overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-x-visible scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-blue-50">
             {[
               "political_campaigns",
               "governments_entities",
@@ -99,10 +99,10 @@ const Provide = () => {
             ].map((key, idx) => {
               const client = t.raw(`clients.${key}`);
               return (
-                <div key={key} className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 flex flex-col h-full">
-                  <h4 className="text-2xl font-semibold text-navyblue mb-2 text-center">{client.headline}</h4>
-                  <p className="text-bluegray text-center mb-4 font-medium">{client.tagline}</p>
-                  <ul className="list-disc pl-5 text-bluegray text-base mb-2 flex-grow">
+                <div key={key} className="min-w-[240px] md:min-w-0 bg-white rounded-2xl p-4 shadow-lg border border-gray-100 flex flex-col h-full">
+                  <h4 className="text-lg font-semibold text-navyblue mb-1 text-center">{client.headline}</h4>
+                  <p className="text-bluegray text-center mb-2 font-medium text-sm">{client.tagline}</p>
+                  <ul className="list-disc pl-4 text-bluegray text-sm mb-1 flex-grow">
                     {client.services.map((srv: string, i: number) => (
                       <li key={i}>{srv}</li>
                     ))}
