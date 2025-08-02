@@ -5,27 +5,31 @@
   },
   "Method": {
     "title": "HOW DO WE WORK?",
-    "subtitle": "Our methodology is based on four fundamental pillars that guarantee effective and measurable results.",
-    "diagnosis": {
-      "heading": "Deep Diagnosis",
-      "description": "We don't propose without understanding. We conduct exhaustive analysis before any strategic recommendation."
+    "subtitle": "Our methodology combines data science, political intuition, and tactical production.",
+    "diagnostico": {
+      "heading": "Emotional and Context Diagnosis",
+      "description": "\"We don't propose without understanding.\" We listen deeply, using social listening, emotion analysis, territories, and perceptions."
     },
-    "strategy": {
-      "heading": "Measurable Strategy",
-      "description": "Every action must have a purpose. We design strategies with clear objectives and defined success metrics."
+    "estrategia": {
+      "heading": "Strategy and Narrative",
+      "description": "\"Every action must have a purpose.\" We define axes, messages, and tone for each audience, channel, and moment."
     },
-    "narrative": {
-      "heading": "Coherent Narrative",
-      "description": "Across all channels, with all audiences. We build consistent messages aligned with the strategy."
+    "produccion": {
+      "heading": "Multiformat Production and Operational Deployment",
+      "description": "From idea to field, from message to published content."
     },
-    "support": {
-      "heading": "Continuous Support",
-      "description": "We don't sell inputs. We build processes. From idea to published content, we accompany you every step of the way."
+    "evaluacion": {
+      "heading": "Impact Evaluation",
+      "description": "\"We build processes, we don't sell inputs.\" We measure, adjust, and document with real KPIs."
     }
   },
   "About": {
     "title": "What Defines Us",
-    "description": "At Criteria we combine strategy, data and experience to transform political and corporate communication into a real power tool. Our specialty: turning analysis into action.",
+    "description": "At Criteria, we combine strategy, data intelligence, and field experience to transform communication into a real power tool. We help those who lead—campaigns, governments, or companies—make better decisions, build trust, and connect with their audiences based on what truly matters: evidence.",
+    "especialidad": {
+      "title": "Our Specialty",
+      "desc": "Turning analysis into action"
+    },
     "strategy": {
       "title": "Strategy",
       "desc": "Deep analysis and strategic planning"
@@ -37,22 +41,6 @@
     "experience": {
       "title": "Experience",
       "desc": "Effective political and corporate communication"
-    },
-    "mission": {
-      "heading": "Who We Are",
-      "description": "We are a political communication consulting firm that transforms data into narrative power. We help create, position, and strengthen political leaders using digital intelligence, territorial analysis, and influence strategies."
-    },
-    "vision": {
-      "heading": "Our Approach",
-      "description": "We design personalized strategies that combine data analysis, social listening, and territorial insight to confidently shape public debate."
-    },
-    "values": {
-      "heading": "Our Technology",
-      "description": "We offer a robust ecosystem of proprietary and partner tools to turn social data into actionable narratives. From specialized scrapers to AI models trained to identify trends, sentiment, and electoral behavior, our technology empowers precise, timely, and segmented decisions."
-    },
-    "team": {
-      "heading": "Smart Decision-Making",
-      "description": "Our diverse team of professionals is dedicated to delivering innovative solutions that maximize your political impact and ensure success in every campaign."
     }
   },
   "Navbar": {
@@ -72,34 +60,85 @@
     "ctaPortfolio": "Download our Service Portfolio"
   },
   "Services": {
-    "title": "WHAT WE DO",
-    "description": "We offer two main service lines specialized in political and business communication, with customized solutions and cutting-edge technology.",
+    "section_title": "What We Do",
+    "section_intro": "We organize our services according to whom we support, to precisely address the real needs of each type of client.",
+    "service_lines_title": "Our Service Lines",
     "learnMore": "Learn more",
-    "showMore": "Show more",
-    "showLess": "Show less",
-    "politicalLine": {
-      "title": "Political Line",
-      "description": "Specialized services for the political and public sector"
+    "service_lines": {
+      "political_campaigns": {
+        "title": "Political Campaigns",
+        "description": "Win elections through narrative strategies and multiformat tactics.",
+        "features": [
+          "Political diagnosis, winning narrative, and tactical operation"
+        ]
+      },
+      "governments_entities": {
+        "title": "Governments and Public Entities",
+        "description": "Strengthen institutional communication, public trust, and citizen participation.",
+        "features": [
+          "Territorial diagnosis, citizen listening, and verifiable messages"
+        ]
+      },
+      "companies_organizations": {
+        "title": "Companies and Organizations",
+        "description": "Build strategic reputation and sustainable narratives for private organizations.",
+        "features": [
+          "Corporate communication with purpose and social narrative"
+        ]
+      },
+      "training": {
+        "title": "Training",
+        "description": "Train spokespersons, leaders, and influencers in high-impact public communication.",
+        "features": [
+          "Real simulations, personal narrative, and emotional control"
+        ]
+      }
     },
-    "businessLine": {
-      "title": "Business Line",
-      "description": "Solutions for companies, organizations and institutions"
-    },
-    "political1": {
-      "title": "Services for Political Campaigns",
-      "desc": "Digital strategy, personal branding, political platform and strategic relationships for candidates and political movements."
-    },
-    "political2": {
-      "title": "Services for Governments and Public Entities",
-      "desc": "Government communication consulting, crisis management, territorial analysis and institutional strengthening."
-    },
-    "business1": {
-      "title": "Services for Companies, Organizations and Institutions",
-      "desc": "Social listening, communication strategy, reputation management and brand positioning in political and social environments."
-    },
-    "business2": {
-      "title": "Training for Spokespersons, Leaders and Influencers",
-      "desc": "Specialized training in political communication, media management, narrative construction and public leadership."
+    "clients_title": "These Are Our Clients",
+    "clients": {
+      "political_campaigns": {
+        "headline": "Political Campaigns",
+        "tagline": "We design narrative, territorial, and digital victories.",
+        "services": [
+          "Candidate profiling and campaign narrative",
+          "360 digital strategy: content, advertising, and segmentation",
+          "Social listening and electoral intelligence",
+          "Political crisis management and online reputation",
+          "Media and influencer relations",
+          "Development of the government program"
+        ]
+      },
+      "governments_entities": {
+        "headline": "Governments and Public Entities",
+        "tagline": "Governing also means knowing how to communicate.",
+        "services": [
+          "Clear and citizen-focused institutional narrative",
+          "Communication during execution, transformation, or crisis",
+          "Analysis of social pulse and citizen perception",
+          "Spokesperson and cabinet training"
+        ]
+      },
+      "companies_organizations": {
+        "headline": "Companies and Organizations",
+        "tagline": "Reputation with purpose.",
+        "services": [
+          "ESG communication and sustainability with a human narrative",
+          "Reputational crisis management",
+          "Social listening for prevention and opportunity",
+          "Corporate spokesperson training",
+          "Positioning of brands, causes, and leaders"
+        ]
+      },
+      "training": {
+        "headline": "Training for Spokespersons, Leaders, and Influencers",
+        "tagline": "It's not enough to have something to say. You have to know how to say it.",
+        "services": [
+          "Real simulations with feedback",
+          "Preparation for media, crisis, and podcasts",
+          "Message maps and narrative control",
+          "Adapted to individual, institutional, or collective profiles"
+        ]
+      }
     }
   },
   "Why": {

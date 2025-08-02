@@ -5,27 +5,31 @@
     },
     "Method": {
         "title": "¿CÓMO TRABAJAMOS?",
-        "subtitle": "Nuestra metodología se basa en cuatro pilares fundamentales que garantizan resultados efectivos y medibles.",
-        "diagnosis": {
-            "heading": "Diagnóstico Profundo",
-            "description": "No proponemos sin entender. Realizamos un análisis exhaustivo antes de cualquier recomendación estratégica."
+        "subtitle": "Nuestra metodología combina ciencia de datos, intuición política y producción táctica.",
+        "diagnostico": {
+            "heading": "Diagnóstico emocional y de contexto",
+            "description": "“No proponemos sin entender”. Escuchamos a fondo, con social listening, análisis de emociones, territorios y percepciones."
         },
-        "strategy": {
-            "heading": "Estrategia Medible",
-            "description": "Cada acción debe tener un para qué. Diseñamos estrategias con objetivos claros y métricas de éxito definidas."
+        "estrategia": {
+            "heading": "Estrategia y narrativa",
+            "description": "“Cada acción debe tener un para qué”. Definimos ejes, mensajes y tono para cada público, canal y momento."
         },
-        "narrative": {
-            "heading": "Narrativa Coherente",
-            "description": "En todos los canales, con todos los públicos. Construimos mensajes consistentes y alineados con la estrategia."
+        "produccion": {
+            "heading": "Producción multiformato y despliegue operativo",
+            "description": "De la idea al terreno, del mensaje al contenido publicado."
         },
-        "support": {
-            "heading": "Acompañamiento Continuo",
-            "description": "No vendemos insumos. Construimos procesos. Desde la idea hasta el contenido publicado, te acompañamos en cada paso."
+        "evaluacion": {
+            "heading": "Evaluación de impacto",
+            "description": "“Construimos procesos, no vendemos insumos”. Medimos, ajustamos y documentamos con KPIs reales."
         }
     },
     "About": {
         "title": "Lo que Nos Define",
-        "description": "En Criteria combinamos estrategia, datos y experiencia para transformar la comunicación política y corporativa en una herramienta de poder real. Nuestra especialidad: convertir el análisis en acción.",
+        "description": "En Criteria, unimos estrategia, inteligencia de datos y experiencia de campo para transformar la comunicación en una herramienta de poder real. Ayudamos a quienes lideran —campañas, gobiernos o empresas— a tomar mejores decisiones, ganar confianza y conectar con sus audiencias desde lo que realmente importa: la evidencia.",
+        "especialidad": {
+            "title": "Nuestra Especialidad",
+            "desc": "Convertir el análisis en acción"
+        },
         "strategy": {
             "title": "Estrategia",
             "desc": "Análisis profundo y planificación estratégica"
@@ -37,22 +41,6 @@
         "experience": {
             "title": "Experiencia",
             "desc": "Comunicación política y corporativa efectiva"
-        },
-        "mission": {
-            "heading": "¿Quiénes Somos?",
-            "description": "Somos una firma de consultoría en comunicación política que transforma datos en poder narrativo. Acompañamos la creación, posicionamiento y consolidación de líderes políticos con herramientas de inteligencia digital, análisis territorial y estrategia de influencia."
-        },
-        "vision": {
-            "heading": "Nuestro Enfoque",
-            "description": "Diseñamos estrategias personalizadas que combinan análisis de datos, escucha social y visión territorial para incidir con confianza en el debate público."
-        },
-        "values": {
-            "heading": "Nuestra Tecnología",
-            "description": "Contamos con un ecosistema de herramientas propias y aliadas para transformar datos sociales en insumos narrativos. Desde scrapers especializados hasta modelos de IA entrenados para identificar tendencias, sentimientos y comportamientos electorales."
-        },
-        "team": {
-            "heading": "Decisiones Inteligentes",
-            "description": "Nuestra tecnología permite tomar decisiones precisas, oportunas y segmentadas, potenciando el impacto de cada acción en el ámbito político."
         }
     },
     "Navbar": {
@@ -72,34 +60,85 @@
         "ctaPortfolio": "Descarga nuestro Portafolio de Servicios"
     },
     "Services": {
-        "title": "LO QUE HACEMOS",
-        "description": "Ofrecemos dos grandes líneas de servicio especializadas en comunicación política y empresarial, con soluciones personalizadas y tecnología de vanguardia.",
-        "learnMore": "Conoce más",
-        "showMore": "Ver más",
-        "showLess": "Ver menos",
-        "politicalLine": {
-            "title": "Línea Política",
-            "description": "Servicios especializados para el sector político y público"
+        "section_title": "Lo que hacemos",
+        "section_intro": "Organizamos nuestros servicios según a quién acompañamos, para responder con precisión a las necesidades reales de cada tipo de cliente.",
+        "service_lines_title": "Nuestras Líneas de Servicio",
+        "learnMore":"Aprende más",
+        "service_lines": {
+            "political_campaigns": {
+                "title": "Campañas Políticas",
+                "description": "Ganar elecciones a partir de estrategias narrativas y tácticas multiformato.",
+                "features": [
+                    "Diagnóstico político, narrativa ganadora y operación táctica"
+                ]
+            },
+            "governments_entities": {
+                "title": "Gobiernos y Entidades Públicas",
+                "description": "Fortalecer la comunicación institucional, la confianza pública y la participación ciudadana.",
+                "features": [
+                    "Diagnóstico territorial, escucha ciudadana y mensajes verificables"
+                ]
+            },
+            "companies_organizations": {
+                "title": "Empresas y Organizaciones",
+                "description": "Construir reputación estratégica y narrativas sostenibles para organizaciones privadas.",
+                "features": [
+                    "Comunicación corporativa con propósito y narrativa social"
+                ]
+            },
+            "training": {
+                "title": "Entrenamiento",
+                "description": "Formar voceros, líderes e influenciadores en comunicación pública de alto impacto.",
+                "features": [
+                    "Simulacros reales, narrativa personal y control emocional"
+                ]
+            }
         },
-        "businessLine": {
-            "title": "Línea Empresarial",
-            "description": "Soluciones para empresas, organizaciones e instituciones"
-        },
-        "political1": {
-            "title": "Servicios para Campañas Políticas",
-            "desc": "Estrategia digital, personal branding, plataforma política y relacionamiento estratégico para candidatos y movimientos políticos."
-        },
-        "political2": {
-            "title": "Servicios para Gobiernos y Entidades Públicas",
-            "desc": "Consultoría en comunicación gubernamental, gestión de crisis, análisis territorial y fortalecimiento institucional."
-        },
-        "business1": {
-            "title": "Servicios para Empresas, Organizaciones e Instituciones",
-            "desc": "Social listening, estrategia de comunicación, gestión de reputación y posicionamiento de marca en entornos políticos y sociales."
-        },
-        "business2": {
-            "title": "Entrenamiento de Voceros, Líderes e Influenciadores",
-            "desc": "Formación especializada en comunicación política, manejo de medios, construcción de narrativas y liderazgo público."
+        "clients_title": "Estos son nuestros Clientes",
+        "clients": {
+            "political_campaigns": {
+                "headline": "Campañas Políticas",
+                "tagline": "Diseñamos victorias narrativas, territoriales y digitales.",
+                "services": [
+                    "Perfilamiento de candidaturas y narrativa de campaña",
+                    "Estrategia digital 360: contenidos, pauta y segmentación",
+                    "Social listening e inteligencia electoral",
+                    "Manejo de crisis política y reputación online",
+                    "Relaciones con medios e influenciadores",
+                    "Desarrollo del programa de gobierno"
+                ]
+            },
+            "governments_entities": {
+                "headline": "Gobiernos y Entidades Públicas",
+                "tagline": "Gobernar también es saber comunicar.",
+                "services": [
+                    "Narrativa institucional clara y ciudadana",
+                    "Comunicación en ejecución, transformación o crisis",
+                    "Análisis del pulso social y percepción ciudadana",
+                    "Entrenamiento de voceros y gabinete"
+                ]
+            },
+            "companies_organizations": {
+                "headline": "Empresas y Organizaciones",
+                "tagline": "Reputación con propósito.",
+                "services": [
+                    "Comunicación ESG y sostenibilidad con narrativa humana",
+                    "Manejo de crisis reputacional",
+                    "Social listening para prevención y oportunidad",
+                    "Entrenamiento de voceros corporativos",
+                    "Posicionamiento de marcas, causas y líderes"
+                ]
+            },
+            "training": {
+                "headline": "Entrenamiento de Voceros, Líderes e Influenciadores",
+                "tagline": "No basta con tener algo que decir. Hay que saber cómo decirlo.",
+                "services": [
+                    "Simulacros reales con retroalimentación",
+                    "Preparación para medios, crisis y pódcast",
+                    "Mapas de mensaje y control narrativo",
+                    "Adaptado a perfiles individuales, institucionales o colectivos"
+                ]
+            }
         }
     },
     "Why": {

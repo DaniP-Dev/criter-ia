@@ -13,23 +13,23 @@ const About = () => {
     const methodData: methodCardType[] = [
         {
             imgSrc: '/assets/about/mission.svg',
-            heading: t('diagnosis.heading'),
-            description: t('diagnosis.description'),
+            heading: t('diagnostico.heading'),
+            description: t('diagnostico.description'),
         },
         {
             imgSrc: '/assets/about/vision.svg',
-            heading: t('strategy.heading'),
-            description: t('strategy.description'),
+            heading: t('estrategia.heading'),
+            description: t('estrategia.description'),
         },
         {
             imgSrc: '/assets/about/values.svg',
-            heading: t('narrative.heading'),
-            description: t('narrative.description'),
+            heading: t('produccion.heading'),
+            description: t('produccion.description'),
         },
         {
             imgSrc: '/assets/about/team.svg',
-            heading: t('support.heading'),
-            description: t('support.description'),
+            heading: t('evaluacion.heading'),
+            description: t('evaluacion.description'),
         }
     ];
 

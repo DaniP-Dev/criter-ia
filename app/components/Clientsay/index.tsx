@@ -14,10 +14,14 @@ const Clientsay = () => {
                     <p className="text-xl lg:text-2xl font-normal text-darkgray leading-relaxed">
                         {t("description")}
                     </p>
+                    <div className="mt-6 flex flex-col items-center">
+                        <h3 className="text-lg font-semibold text-navyblue mb-1">{t("especialidad.title")}</h3>
+                        <p className="text-base text-blue font-bold">{t("especialidad.desc")}</p>
+                    </div>
                 </div>
                 
                 {/* Elementos visuales decorativos */}
-                <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className=" grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="flex flex-col items-center p-6">
                         <div className="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-4">
                             <span className="text-white text-2xl font-bold">📊</span>
