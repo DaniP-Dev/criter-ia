@@ -49,7 +49,8 @@
         "method": "Nuestro Método",
         "services": "Servicios",
         "brochure": "Brochure",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "descargarMobile": "Obten el brochure"
     },
     "ButtonCTA": {
         "ctaText": "Cta Es"

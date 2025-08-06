@@ -17,10 +17,10 @@ const Data = ({ onNavClick }: DataProps) => {
   const t = useTranslations("Navbar");
   const navigation: NavigationItem[] = [
     { name: t("home"), sectionId: "inicio", current: true },
+    { name: t("brochure"), sectionId: "brochure", current: false },
     { name: t("about"), sectionId: "quienes-somos", current: false },
     { name: t("method"), sectionId: "nuestro-metodo", current: false },
     { name: t("services"), sectionId: "servicios", current: false },
-    { name: t("brochure"), sectionId: "brochure", current: false },
     { name: t("contact"), sectionId: "contacto", current: false },
   ];
 
@@ -48,8 +48,16 @@ const Data = ({ onNavClick }: DataProps) => {
               </button>
             ))}
             <div className="mt-4"></div>
-            <button className="bg-lightblue w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded">
-              Descarga el Boletín
+            <button
+              className="bg-lightblue w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded"
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/pdf/Brochure_Criteria.pdf";
+                link.download = "Boletin-Comunicacion-Digital-Colombia.pdf";
+                link.click();
+              }}
+            >
+              {t("descargarMobile") }
             </button>
           </div>
         </div>

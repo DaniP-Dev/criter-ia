@@ -35,10 +35,10 @@ const Navbar = () => {
 
   const navigation: NavigationItem[] = [
     { name: t("home"), sectionId: "inicio", current: true },
+    { name: t("brochure"), sectionId: "brochure", current: false },
     { name: t("about"), sectionId: "quienes-somos", current: false },
     { name: t("method"), sectionId: "nuestro-metodo", current: false },
     { name: t("services"), sectionId: "servicios", current: false },
-    { name: t("brochure"), sectionId: "brochure", current: false },
     { name: t("contact"), sectionId: "contacto", current: false },
   ];
 
