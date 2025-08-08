@@ -7,7 +7,7 @@ import Provide from "../components/Provide";
 import Why from "../components/Why";
 import Clientsay from "../components/Clientsay";
 import Newsletter from "../components/Newsletter/Newsletter";
-import Redes from "../components/redes";
+import Redes from "../components/Redes";
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
