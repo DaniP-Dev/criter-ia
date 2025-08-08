@@ -58,54 +58,50 @@ const Navbar = () => {
       <>
         <div className="mx-auto max-w-7xl px-6 lg:py-4 lg:px-8">
           <div className="relative flex h-20 items-center justify-between">
-            <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
-              {/* LOGO */}              <div className="flex flex-shrink-0 items-center">
-                <Image
-                  className="block h-12 w-40 object-contain lg:hidden"
-                  src={"/imgs/bannerFW.png"}
-                  alt="dsign-logo"
-                  width={160}
-                  height={48}
-                />
-                <Image
-                  className="hidden lg:block h-20 w-48 object-contain"
-                  src={"/imgs/bannerFW.png"}
-                  alt="dsign-logo"
-                  width={192}
-                  height={80}
-                />
-              </div>
+            {/* LOGO */}
+            <div className="flex flex-shrink-0 items-center">
+              <Image
+                className="block h-12 w-40 object-contain lg:hidden"
+                src={"/imgs/bannerFW.png"}
+                alt="dsign-logo"
+                width={160}
+                height={48}
+              />
+              <Image
+                className="hidden lg:block h-20 w-48 object-contain"
+                src={"/imgs/bannerFW.png"}
+                alt="dsign-logo"
+                width={192}
+                height={80}
+              />
+            </div>
 
-              {/* LINKS */}
-
-              <div className="hidden lg:block m-auto">
-                <div className="flex space-x-2 lg:space-x-4 items-center">
-                  {navigation.map((item) => (
-                    <button
-                      key={item.name}
-                      onClick={() => handleNavClick(item)}
-                      className={classNames(
-                        item.current
-                          ? " text-black hover:opacity-100"
-                          : "hover:text-black hover:opacity-100",
-                        "px-2 lg:px-3 py-4 text-lg font-normal opacity-75 space-links bg-transparent border-none cursor-pointer whitespace-nowrap min-w-fit"
-                      )}
-                    >
-                      {item.name}
-                    </button>
-                  ))}
-                </div>
+            {/* LINKS */}
+            <div className="hidden lg:flex flex-1 justify-center">
+              <div className="flex space-x-2 lg:space-x-4 items-center">
+                {navigation.map((item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => handleNavClick(item)}
+                    className={classNames(
+                      item.current
+                        ? " text-black hover:opacity-100"
+                        : "hover:text-black hover:opacity-100",
+                      "px-2 lg:px-3 py-4 text-lg font-normal opacity-75 space-links bg-transparent border-none cursor-pointer whitespace-nowrap min-w-fit"
+                    )}
+                  >
+                    {item.name}
+                  </button>
+                ))}
               </div>
             </div>
 
             {/* CTA */}
-
-            <CtaButton />
-
-            {/* DRAWER FOR MOBILE VIEW */}
+            <div className="flex-shrink-0 hidden lg:flex">
+              <CtaButton />
+            </div>
 
             {/* DRAWER ICON */}
-
             <div className="block lg:hidden">
               <Bars3Icon
                 className="block h-6 w-6"
@@ -115,7 +111,6 @@ const Navbar = () => {
             </div>
 
             {/* DRAWER LINKS DATA */}
-
             <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
               <Drawerdata onNavClick={handleNavClick} />
             </Drawer>
