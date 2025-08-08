@@ -9,15 +9,7 @@ const Newsletter = () => {
     return (
         <div className='-mt-32 relative z-3'>
             <div className="mx-auto max-w-2xl lg:max-w-7xl bg-blue-500 rounded-3xl">
-            <div className="flex justify-center">
-              <Image
-                src={"/imgs/4Grid.png"}
-                alt="banner-image"
-                width={1200}
-                height={598}
-                className="p-5 rounded-3xl"
-              />
-            </div>
+            
                 <div className="grid grid-cols-1 gap-y-10 gap-x-6 lg:grid-cols-2 xl:gap-x-8">
 
                     {/* COLUMN-1 */}
