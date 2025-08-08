@@ -39,7 +39,7 @@ export default function HomePage() {
           className="p-5 rounded-3xl"
         />
       </div>
-      <section id="contacto" className="pt-16 md:pt-8">
+      <section id="contacto" className="pt-36 md:pt-40">
         <Newsletter />
       </section>
     </main>

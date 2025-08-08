@@ -16,7 +16,7 @@ const CtaButton = () => {
     <button
       type="button"
       onClick={handleClick}
-      className="text-blue text-base lg:text-lg font-medium ml-4 lg:ml-9 mr-2 py-3 px-6 lg:py-5 lg:px-16 transition duration-150 ease-in-out leafbutton bg-lightblue hover:text-white hover:bg-blue active:text-white active:bg-blue flex items-center justify-center group"
+      className="text-brandblue text-base lg:text-lg font-medium ml-4 lg:ml-9 mr-2 py-3 px-6 lg:py-5 lg:px-16 transition duration-150 ease-in-out leafbutton bg-lightblue hover:text-white hover:bg-blue active:text-white active:bg-blue flex items-center justify-center group"
     >
       <span className="mr-2">
         <svg

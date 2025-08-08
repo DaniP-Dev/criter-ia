@@ -15,7 +15,7 @@ const socialStats: SocialStat[] = [
   {
     name: 'Facebook',
     icon: FaFacebookF,
-    followers: '12,500',
+    followers: '100',
     url: 'https://www.facebook.com/profile.php?id=61578752468834',
     colorClass: 'text-blue-600',
     bgClass: 'bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400',
@@ -23,7 +23,7 @@ const socialStats: SocialStat[] = [
   {
     name: 'Twitter',
     icon: FaTwitter,
-    followers: '8,200',
+    followers: '1000',
     url: 'https://x.com/Somoscriteria',
     colorClass: 'text-sky-400',
     bgClass: 'bg-gradient-to-br from-sky-400 via-blue-400 to-sky-300',
@@ -31,7 +31,7 @@ const socialStats: SocialStat[] = [
   {
     name: 'Instagram',
     icon: FaInstagram,
-    followers: '15,300',
+    followers: '300',
     url: 'https://www.instagram.com/somoscriteria/',
     colorClass: 'text-pink-500',
     bgClass: 'bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600',
@@ -39,7 +39,7 @@ const socialStats: SocialStat[] = [
   {
     name: 'LinkedIn',
     icon: FaLinkedinIn,
-    followers: '5,900',
+    followers: '500',
     url: 'https://www.linkedin.com/company/somos-criteria/about/?viewAsMember=true',
     colorClass: 'text-blue-700',
     bgClass: 'bg-gradient-to-br from-blue-800 via-blue-600 to-blue-400',
