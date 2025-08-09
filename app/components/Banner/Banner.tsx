@@ -29,8 +29,13 @@ const Banner = () => {
             <div className="text-center mt-5">
               <button
                 type="button"
-                className="text-15px text-white font-medium bg-blue py-5 px-9 mt-2 leafbutton"
-                onClick={() => openWhatsApp("banner")}
+                className="text-15px text-white font-medium bg-brandblue  py-5 px-9 mt-2 leafbutton"
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/pdf/Brochure_Criteria.pdf";
+                  link.download = "Brochure_Criteria.pdf";
+                  link.click();
+                }}
               >
                 {t("ctaPortfolio")}
               </button>

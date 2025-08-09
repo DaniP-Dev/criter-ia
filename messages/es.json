@@ -48,9 +48,9 @@
         "about": "Quiénes Somos",
         "method": "Nuestro Método",
         "services": "Servicios",
-        "brochure": "Portafolio de servicios",
+        "brochure": "boletin",
         "contact": "Contacto",
-        "descargarMobile": "Obten el brochure"
+        "descargarMobile": "Obten el boletin"
     },
     "ButtonCTA": {
         "ctaText": "Cta Es"

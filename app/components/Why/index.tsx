@@ -43,8 +43,8 @@ const Why = () => {
               className="text-15px mt-2 text-white md:text-[#3399FF] transition duration-150 ease-in-out hover:text-blue bg-[#3399FF] md:bg-white hover:bg-white font-medium py-5 px-16 border border-lightgrey leafbutton mx-auto block"
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/pdf/Brochure_Criteria.pdf";
-                link.download = "Boletin-Comunicacion-Digital-Colombia.pdf";
+                link.href = "/pdf/Informe_Junio_2025.pdf";
+                link.download = "Informe_Junio_2025.pdf";
                 link.click();
               }}
             >
