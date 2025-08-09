@@ -1,6 +1,6 @@
 // Configuración centralizada de WhatsApp
 export const WHATSAPP_CONFIG = {
-  phoneNumber: "3016328564",
+  phoneNumber: "3023603875",
   countryCode: "57", // Colombia
 };
 

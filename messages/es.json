@@ -64,7 +64,7 @@
         "section_title": "Lo que hacemos",
         "section_intro": "Organizamos nuestros servicios según a quién acompañamos, para responder con precisión a las necesidades reales de cada tipo de cliente.",
         "service_lines_title": "Nuestras Líneas de Servicio",
-        "learnMore":"Aprende más",
+        "learnMore": "Aprende más",
         "service_lines": {
             "political_campaigns": {
                 "title": "Campañas Políticas",
@@ -152,7 +152,7 @@
     },
     "Footer": {
         "address": "Estados Unidos, Miami - Colombia, Bogotá, Medellín, Bucaramanga",
-        "phone": "+_____________",
+        "phone": "+57 302 3603875",
         "email": "Contacto@somoscriteria.com",
         "copyright": "© 2025 Criteria Comunicación Política. Todos los derechos reservados.",
         "privacy": "Política de privacidad",
